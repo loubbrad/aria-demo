@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aria-MIDI Online Supplement</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        p {
+            font-size: 16px;
+        }
+        .prompt-section {
+            margin-bottom: 40px;
+        }
+        .model-sample {
+            margin-bottom: 20px;
+        }
+        .model-sample audio {
+            margin-right: 10px;
+        }
+        .download-link {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        hr {
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Aria-MIDI - Online Supplement</h1>
+
+<h3>In both cases, the models have been trained on a next-token-prediction objective. Samples are obtained by prompting with a priming sequence and sampling autoregressively using top_p sampling, with hyperparameters: temperature=0.95, top_p=0.95. For each prompt and model, we generated 10 samples and selected the first five that did not quickly degenerate. It should be noted that the GiantMIDI dataset contains MIDI transcriptions of classical piano music.</h3>
+
+<!-- Start of Prompt Sections -->
+<div class="prompt-section">
+    <h2>Jazz - Misty</h2>
+    <h3>Raw Prompt</h3>
+    <audio controls>
+        <source src="assets/prompt/misty.mp3" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <a href="assets/aria_midi/prompt/misty.mid" class="download-link" download>Download MIDI</a>
+
+    <h3>Aria-MIDI continuations (prompted with 12s)</h3>
+    <!-- Aria-MIDI Model Samples -->
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/misty/1.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/misty/1.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/misty/2.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/misty/2.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/misty/3.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/misty/3.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/misty/4.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/misty/4.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/misty/5.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/misty/5.mid" class="download-link" download>Download MIDI</a>
+    </div>
+
+    <h3>GiantMIDI continuations (prompted with 12s)</h3>
+    <!-- GiantMIDI Model Samples -->
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/misty/1.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/misty/1.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/misty/2.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/misty/2.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/misty/3.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/misty/3.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/misty/4.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/misty/4.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/misty/5.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/misty/5.mid" class="download-link" download>Download MIDI</a>
+    </div>
+</div>
+
+<div class="prompt-section">
+    <h2>Classical - Nocturne</h2>
+    <h3>Raw Prompt</h3>
+    <audio controls>
+        <source src="assets/prompt/nocturne.mp3" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <a href="assets/aria_midi/prompt/nocturne.mid" class="download-link" download>Download MIDI</a>
+
+    <h3>Aria-MIDI continuations (prompted with 12s)</h3>
+    <!-- Aria-MIDI Model Samples -->
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/nocturne/1.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/nocturne/1.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/nocturne/2.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/nocturne/2.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/nocturne/3.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/nocturne/3.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/nocturne/4.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/nocturne/4.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/nocturne/5.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/nocturne/5.mid" class="download-link" download>Download MIDI</a>
+    </div>
+
+    <h3>GiantMIDI continuations (prompted with 12s)</h3>
+    <!-- GiantMIDI Model Samples -->
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/nocturne/1.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/nocturne/1.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/nocturne/2.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/nocturne/2.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/nocturne/3.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/nocturne/3.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/nocturne/4.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/nocturne/4.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/nocturne/5.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/nocturne/5.mid" class="download-link" download>Download MIDI</a>
+    </div>
+</div>
+
+<div class="prompt-section">
+    <h2>Blues - Improvisation</h2>
+    <h3>Raw Prompt</h3>
+    <audio controls>
+        <source src="assets/prompt/blues.mp3" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+    <a href="assets/aria_midi/prompt/blues.mid" class="download-link" download>Download MIDI</a>
+
+    <h3>Aria-MIDI continuations (prompted with 25s)</h3>
+    <!-- Aria-MIDI Model Samples -->
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/blues/1.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/blues/1.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/blues/2.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/blues/2.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/blues/3.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/blues/3.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/blues/4.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/blues/4.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/aria_midi/blues/5.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/aria_midi/blues/5.mid" class="download-link" download>Download MIDI</a>
+    </div>
+
+    <h3>GiantMIDI continuations (prompted with 25s)</h3>
+    <!-- GiantMIDI Model Samples -->
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/blues/1.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/blues/1.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/blues/2.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/blues/2.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/blues/3.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/blues/3.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/blues/4.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/blues/4.mid" class="download-link" download>Download MIDI</a>
+    </div>
+    <div class="model-sample">
+        <audio controls>
+            <source src="assets/giant_midi/blues/5.mp3" type="audio/wav">
+        </audio>
+        <a href="assets/giant_midi/blues/5.mid" class="download-link" download>Download MIDI</a>
+    </div>
+</div>
+
+<hr>
+</body>
+</html>
